@@ -1,0 +1,9 @@
+services:
+  mrpl-workbench:
+    build:
+      context: .
+      dockerfile: Dockerfile.demo
+    image: mrpl-workbench:offline
+    ports:
+      - "127.0.0.1:5173:8000"
+    restart: "no"
